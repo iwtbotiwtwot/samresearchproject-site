@@ -19,7 +19,8 @@ npm run build
 npm audit
 ```
 
-The production build is exported to `dist/` for static hosting.
+The production build uses vinext to create the `dist/` server and client
+artifacts expected by the hosting runtime.
 
 ## Publication boundary
 
