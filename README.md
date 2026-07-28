@@ -20,7 +20,8 @@ npm audit
 ```
 
 The production build uses vinext to create the `dist/` server and client
-artifacts expected by the hosting runtime.
+artifacts expected by the hosting runtime, then embeds the site project
+metadata required to save that bundle as a deployable version.
 
 ## Publication boundary
 
