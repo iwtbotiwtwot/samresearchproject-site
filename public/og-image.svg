@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="80%" cy="48%" r="55%">
+      <stop offset="0" stop-color="#153f34"/>
+      <stop offset=".5" stop-color="#0a211b"/>
+      <stop offset="1" stop-color="#071411"/>
+    </radialGradient>
+    <radialGradient id="core">
+      <stop offset="0" stop-color="#f0c27d"/>
+      <stop offset=".17" stop-color="#dda65d"/>
+      <stop offset=".3" stop-color="#69cfb0" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#69cfb0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#69cfb0" fill="none">
+    <circle cx="940" cy="318" r="238" opacity=".18"/>
+    <circle cx="940" cy="318" r="173" opacity=".32"/>
+    <ellipse cx="940" cy="318" rx="228" ry="118" opacity=".4" stroke-dasharray="5 10"/>
+    <ellipse cx="940" cy="318" rx="126" ry="210" opacity=".25" transform="rotate(42 940 318)"/>
+  </g>
+  <circle cx="940" cy="318" r="72" fill="url(#core)"/>
+  <circle cx="940" cy="318" r="13" fill="#dda65d"/>
+  <g stroke="#69cfb0" opacity=".09">
+    <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200"/>
+    <path d="M90 0v630M180 0v630M270 0v630M360 0v630M450 0v630M540 0v630M630 0v630M720 0v630M810 0v630M900 0v630M990 0v630M1080 0v630"/>
+  </g>
+  <g fill="#69cfb0" font-family="Arial, sans-serif" font-size="18" letter-spacing="4">
+    <text x="70" y="76">SAM · RESEARCH PROJECT</text>
+  </g>
+  <g fill="#f6f1e7" font-family="Georgia, serif" font-size="68">
+    <text x="70" y="236">Matter displaces</text>
+    <text x="70" y="314">the substrate.</text>
+  </g>
+  <text x="70" y="406" fill="#9de6d0" font-family="Georgia, serif" font-size="65" font-style="italic">Displacement accumulates.</text>
+  <text x="70" y="556" fill="#829b8f" font-family="Arial, sans-serif" font-size="20" letter-spacing="2">samresearchproject.org</text>
+</svg>

@@ -23,12 +23,21 @@ export const metadata = {
     title: "SAM Research Project",
     description:
       "A substrate-first research program for matter, gravity, and computation.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "SAM Research Project — Matter displaces the substrate. Displacement accumulates.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "SAM Research Project",
     description:
       "A substrate-first research program for matter, gravity, and computation.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

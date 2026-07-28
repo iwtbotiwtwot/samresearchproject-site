@@ -5,8 +5,7 @@
   "description": "The public research record of the Substrate Accumulation Model.",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build && node scripts/prepare-static-output.mjs",
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {

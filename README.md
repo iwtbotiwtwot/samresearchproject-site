@@ -19,6 +19,8 @@ npm run build
 npm audit
 ```
 
+The production build is exported to `dist/` for static hosting.
+
 ## Publication boundary
 
 The site may describe SAM, Starbreaker, and the Substrate Ledger Computer at a
