@@ -16,7 +16,7 @@ test("Starbreaker canonical presets reproduce the recovered workbench readouts",
     bounceEnergy: STARBREAKER_CANONICAL.supernova.bounceEnergy,
     carrierLeak: STARBREAKER_CANONICAL.supernova.carrierLeak,
   });
-  assert.equal(supernova.status, "PLAYGROUND_NOT_CR");
+  assert.equal(supernova.status, "CANONICAL_REPLAY");
   assert.equal(supernova.stage, "residue");
   assert.equal(supernova.ejectaAtoms, 1409);
   assert.equal(supernova.remnantAtoms, 859);
@@ -33,6 +33,9 @@ test("Starbreaker canonical presets reproduce the recovered workbench readouts",
   assert.equal(failed.remnantAtoms, 1910);
   assert.equal(failed.residueAtoms, 302);
   assert.equal(failed.tensorAmplitudeProxy, 0.015);
+
+  const adjusted = starbreakerScenario({ mode: "supernova", bounceEnergy: 1.4, carrierLeak: 0.7 });
+  assert.equal(adjusted.status, "EXPLORATORY_SCENARIO");
 });
 
 test("Starbreaker evolution crosses the four recovered stage gates", () => {
@@ -42,17 +45,21 @@ test("Starbreaker evolution crosses the four recovered stage gates", () => {
   assert.equal(starbreakerScenario({ time: 0.76 }).stage, "residue");
 });
 
-test("the public plate retains controls, replay, provenance, and its scientific boundary", async () => {
+test("the public plate retains controls, replay, provenance, and precise model status", async () => {
   const [page, plate] = await Promise.all([
     read("app/starbreaker/page.js"),
     read("components/StarbreakerPlate.js"),
   ]);
   assert.match(page, /Recovered Starbreaker browser workbench/);
-  assert.match(page, /not detector-calibrated observables/);
+  assert.match(page, /grounded in Starbreaker's canonical inventory and deterministic scenario equations/);
+  assert.doesNotMatch(page, /detector-calibrated|black-hole probabilities|measured remnant masses/);
   assert.match(plate, /Evolution time/);
   assert.match(plate, /Event energy/);
   assert.match(plate, /Carrier leakage/);
   assert.match(plate, /Run sequence/);
-  assert.match(plate, /Export JSON/);
-  assert.match(plate, /PLAYGROUND_NOT_CR|Illustrative playground/);
+  assert.match(plate, /Get receipt/);
+  assert.match(plate, /Print or save as PDF/);
+  assert.match(plate, /Selected parameters/);
+  assert.match(plate, /Model results/);
+  assert.match(plate, /CANONICAL REPLAY|EXPLORATORY SCENARIO|SAM MODEL EXPLORER/);
 });
