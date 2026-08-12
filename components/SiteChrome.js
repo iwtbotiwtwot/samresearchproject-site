@@ -14,10 +14,11 @@ export const Mark = ({ small = false }) => (
 );
 
 function NavLinks({ active }) {
+  const applicationsActive = applicationRoutes.some((route) => route.href === active);
   return (
     <>
       {primaryRoutes.map((route) => (
-        <a className={active === route.href ? "is-active" : ""} href={route.href} key={route.href}>
+        <a className={active === route.href || (route.href === "/starbreaker" && applicationsActive) ? "is-active" : ""} href={route.href} key={route.href}>
           {route.label}
         </a>
       ))}

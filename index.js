@@ -23,6 +23,7 @@ export const primaryRoutes = Object.freeze([
 
 export const applicationRoutes = Object.freeze([
   { href: "/starbreaker", label: "Starbreaker" },
+  { href: "/galaxy-halos", label: "Galaxy Halos" },
   { href: "/riemann-hypothesis", label: "Riemann Hypothesis" },
   { href: "/mersenne-search", label: "Mersenne Search" },
 ]);
@@ -36,6 +37,7 @@ export const allRoutes = Object.freeze([
   "/volume-iii",
   "/slc",
   "/starbreaker",
+  "/galaxy-halos",
   "/riemann-hypothesis",
   "/mersenne-search",
   "/research-record",
@@ -54,6 +56,7 @@ export const searchEntries = Object.freeze([
   { title: "Volume III — Computation", href: "/volume-iii", type: "Volume", terms: "H14F exact state space reciprocal history" },
   { title: "Substrate Ledger Computer", href: "/slc", type: "Software", terms: "SLC SLCV1.2-H14F-EA18WA-D9 Exact Algebra of the Write Exact Write EA directional Weil adapter WA D1 D9 T18" },
   { title: "Starbreaker", href: "/starbreaker", type: "Application", terms: "matter GW formation history M126 N144 L162 W8 X1 W9" },
+  { title: "Galaxy Halo Stack", href: "/galaxy-halos", type: "Application", terms: "galaxy halos SPARC CR031b CR032 CR033 G393 X_inf 10/pi radial law halo mass" },
   { title: "Riemann Hypothesis Program", href: "/riemann-hypothesis", type: "Application", terms: "RH reciprocal history SAM proof claim completed Weil form xi Gamma radix-12" },
   { title: "Mersenne Search", href: "/mersenne-search", type: "Application", terms: "MP prime ruler beats within beats Lucas-Lehmer SLCMP4483 SLCMP4484 owner-paused" },
   { title: "SLCV1.2 Depth-9", href: "/research-record#slcv1.2-d9", type: "Campaign", terms: "SLCV1.2-D9 H000143 60123392 25/25 frozen promotion" },
@@ -105,6 +108,15 @@ export const publicPrograms = Object.freeze([
   },
   {
     index: "A2",
+    name: "Galaxy Halo Stack",
+    label: "SPARC population surface",
+    href: "/galaxy-halos",
+    accent: "cyan",
+    description:
+      "A 175-galaxy radial and halo-mass instrument joining the G393 forward stack to CR031b, CR032, and the 10/π substrate identity.",
+  },
+  {
+    index: "A3",
     name: "Riemann Hypothesis Program",
     label: "Reciprocal history",
     href: "/riemann-hypothesis",
@@ -113,7 +125,7 @@ export const publicPrograms = Object.freeze([
       "The public SAM proof claim through reciprocal histories, a radix-12 prime tower, completion, and an exact completed Weil form.",
   },
   {
-    index: "A3",
+    index: "A4",
     name: "Mersenne Search",
     label: "Exact candidate custody",
     href: "/mersenne-search",
