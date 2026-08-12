@@ -369,11 +369,6 @@
   font-style: normal;
 }
 
-#starbreaker-plate .sam-boundary {
-  max-width: none;
-  margin-top: 34px;
-}
-
 @media (max-width: 1050px) {
   .starbreaker-lab {
     grid-template-columns: 1fr;

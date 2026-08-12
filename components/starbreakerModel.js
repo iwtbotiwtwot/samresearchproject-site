@@ -40,6 +40,9 @@ export function starbreakerScenario(options = {}) {
   const time = clamp(Number(options.time ?? 1), 0, 1);
   const bounceEnergy = clamp(Number(options.bounceEnergy ?? canonical.bounceEnergy), 0.2, 2);
   const carrierLeak = clamp(Number(options.carrierLeak ?? canonical.carrierLeak), 0, 1);
+  const isCanonicalReference =
+    Math.abs(bounceEnergy - canonical.bounceEnergy) < 1e-12 &&
+    Math.abs(carrierLeak - canonical.carrierLeak) < 1e-12;
   const drive = Math.max(
     0.02,
     (bounceEnergy / canonical.bounceEnergy) * Math.max(0.03, carrierLeak / canonical.carrierLeak),
@@ -69,7 +72,7 @@ export function starbreakerScenario(options = {}) {
   const stage = time < 0.18 ? "star" : time < 0.47 ? "collapse" : time < 0.76 ? "bounce" : "residue";
 
   return {
-    status: "PLAYGROUND_NOT_CR",
+    status: isCanonicalReference ? "CANONICAL_REPLAY" : "EXPLORATORY_SCENARIO",
     mode,
     time,
     stage,
