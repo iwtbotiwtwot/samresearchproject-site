@@ -28,7 +28,11 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        # The current vinext dependency graph contains optional WASM peer
+        # packages that npm 10 cannot validate with `npm ci`. A normal install
+        # resolves the same pinned top-level dependencies and repairs that
+        # optional subtree in the runner before the build.
+        run: npm install --no-audit --no-fund
 
       - name: Run content tests
         run: npm test
