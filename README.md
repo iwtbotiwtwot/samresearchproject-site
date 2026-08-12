@@ -1,6 +1,13 @@
 # SAM Research Project website
 
-The public homepage for [samresearchproject.org](https://samresearchproject.org).
+The public website for [samresearchproject.org](https://samresearchproject.org),
+presenting Sean Brady's three-volume SAM Research Project from substrate, to
+matter, to exact computation.
+
+The site includes the complete trilogy, current runnable SLCV1.2 stack,
+Starbreaker, the SAM Riemann Hypothesis proof claim, the owner-paused Mersenne
+candidate record, reconstructible research history, repository constellation,
+downloads, licensing, stewardship, and attribution.
 
 ## Local development
 
@@ -20,12 +27,12 @@ npm audit
 ```
 
 The production build uses vinext to create the `dist/` server and client
-artifacts expected by the hosting runtime, then embeds the site project
-metadata required to save that bundle as a deployable version.
+artifacts expected by the hosting runtime, then embeds the project metadata
+required to save that bundle as a deployable version.
 
-## Publication boundary
+## Public-source boundary
 
-The site may describe SAM, Starbreaker, and the Substrate Ledger Computer at a
-disclosure-reviewed conceptual level. Protected architecture, implementation,
-hardware, source code, sealed comparisons, and unreviewed research material
-remain outside the public website.
+The public site links directly to controlling technical spines, live authority,
+exact receipts, runnable repositories, preserved corrections, and the newest
+2026-08-11 full-volume exports. Credentials, machine-specific paths, private
+generated state, and unpublished campaign payloads remain outside the website.

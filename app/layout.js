@@ -4,11 +4,11 @@ import { site } from "../index.js";
 export const metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "SAM Research Project",
-    template: "%s · SAM Research Project",
+    default: "SAM Research Project — Substrate, Matter, and Exact Computation",
+    template: "%s | SAM Research Project",
   },
   description:
-    "The public research record of the Substrate Accumulation Model—independent research into matter, gravity, and computation.",
+    "Sean Brady's public three-volume SAM Research Project: substrate accumulation, finite matter grammar, the Substrate Ledger Computer, Starbreaker, reciprocal history, the Riemann Hypothesis program, and Mersenne search.",
   applicationName: site.name,
   authors: [{ name: site.author }],
   creator: site.author,
@@ -20,9 +20,9 @@ export const metadata = {
     type: "website",
     url: "/",
     siteName: site.name,
-    title: "SAM Research Project",
+    title: "SAM Research Project — Substrate, Matter, and Exact Computation",
     description:
-      "A substrate-first research program for matter, gravity, and computation.",
+      "A public three-volume research system connecting substrate, finite matter, and exact computation.",
     images: [
       {
         url: "/og-image.png",
@@ -34,9 +34,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SAM Research Project",
+    title: "SAM Research Project — Substrate, Matter, and Exact Computation",
     description:
-      "A substrate-first research program for matter, gravity, and computation.",
+      "A public three-volume research system connecting substrate, finite matter, and exact computation.",
     images: ["/og-image.png"],
   },
   robots: {
