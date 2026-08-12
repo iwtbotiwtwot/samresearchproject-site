@@ -1,6 +1,8 @@
 import "./globals.css";
 import { site } from "../index.js";
 
+export const dynamic = "force-static";
+
 export const metadata = {
   metadataBase: new URL(site.url),
   title: {

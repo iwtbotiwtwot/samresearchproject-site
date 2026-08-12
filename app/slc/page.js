@@ -15,6 +15,8 @@ import {
 const slc = "https://github.com/iwtbotiwtwot/substrate-ledger-computer";
 const sam = "https://github.com/iwtbotiwtwot/SAM_Research_Project";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Substrate Ledger Computer", description: "The current public SLCV1.2 architecture, runnable stack, exact components, receipts, and preserved lineage.", alternates: { canonical: "/slc" } };
 
 export default function SlcPage() {

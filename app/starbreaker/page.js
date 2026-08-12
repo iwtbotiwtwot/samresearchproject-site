@@ -2,6 +2,8 @@ import { BoundaryNote, ButtonLink, NextRead, PageFrame, PageHero, ResultReceipt,
 
 const repo = "https://github.com/iwtbotiwtwot/SAM_Research_Project";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Starbreaker", description: "SAM's native matter and gravitational-wave formation-history application.", alternates: { canonical: "/starbreaker" } };
 
 export default function StarbreakerPage() {

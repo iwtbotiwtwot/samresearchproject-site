@@ -4,6 +4,8 @@ import { ArchitectureDiagram, BoundaryNote, ButtonLink, EquationBlock, NextRead,
 const rh = "https://github.com/iwtbotiwtwot/riemann-hypothesis-program";
 const sam = "https://github.com/iwtbotiwtwot/SAM_Research_Project";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Riemann Hypothesis Program", description: "The SAM proof claim through reciprocal directed histories, radix-12 prime structure, completion, and an exact completed Weil form.", alternates: { canonical: "/riemann-hypothesis" } };
 
 export default function RiemannHypothesisPage() {

@@ -2,6 +2,8 @@ import VolumePage from "../../components/VolumePage.js";
 
 const repo = "https://github.com/iwtbotiwtwot/SAM_Research_Project";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Volume III: Computation", description: "Volume III of SAM: exact state spaces and reciprocal history.", alternates: { canonical: "/volume-iii" } };
 
 export default function VolumeIIIPage() {

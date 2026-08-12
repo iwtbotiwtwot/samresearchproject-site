@@ -1,6 +1,8 @@
 import { ButtonLink, DownloadCard, PageFrame, PageHero, Section } from "../../components/ResearchComponents.js";
 import { downloadVerification, volumeDownloads } from "../../index.js";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Downloads", description: "Download the complete 2026-08-11 SAM trilogy and verify its published checksums and build receipt.", alternates: { canonical: "/downloads" } };
 
 export default function DownloadsPage() {

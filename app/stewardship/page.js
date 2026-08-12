@@ -2,6 +2,8 @@ import { BoundaryNote, ButtonLink, PageFrame, PageHero, Section } from "../../co
 
 const slc = "https://github.com/iwtbotiwtwot/substrate-ledger-computer";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Stewardship", description: "The outward-facing custody, share-forward licensing, and public stewardship direction of SAM and SLC.", alternates: { canonical: "/stewardship" } };
 
 export default function StewardshipPage() {

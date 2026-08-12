@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "The public research record of the Substrate Accumulation Model.",
+  "description": "The public website for the three-volume SAM Research Project.",
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build && node scripts/prepare-hosting-output.mjs",

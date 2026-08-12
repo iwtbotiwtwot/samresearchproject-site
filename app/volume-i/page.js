@@ -2,6 +2,8 @@ import VolumePage from "../../components/VolumePage.js";
 
 const repo = "https://github.com/iwtbotiwtwot/SAM_Research_Project";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Volume I: Substrate", description: "Volume I of SAM: accumulation, roads, and physical readout.", alternates: { canonical: "/volume-i" } };
 
 export default function VolumeIPage() {

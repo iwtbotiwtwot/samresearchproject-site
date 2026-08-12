@@ -1,6 +1,8 @@
 import { ButtonLink, DownloadCard, PageFrame, PageHero, Section, VolumeCard } from "../../components/ResearchComponents.js";
 import { publicPrograms, volumeDownloads } from "../../index.js";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "The Three Volumes", description: "The complete SAM trilogy: Substrate, Matter, and Computation.", alternates: { canonical: "/volumes" } };
 
 export default function VolumesPage() {

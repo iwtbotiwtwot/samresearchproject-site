@@ -12,6 +12,8 @@ import {
 
 const repo = "https://github.com/iwtbotiwtwot/SAM_Research_Project";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "The Theory", description: "The conceptual spine of the SAM Research Project, from substrate and accumulation to finite grammar and exact computation.", alternates: { canonical: "/theory" } };
 
 export default function TheoryPage() {

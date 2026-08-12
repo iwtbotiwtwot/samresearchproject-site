@@ -30,6 +30,13 @@ The production build uses vinext to create the `dist/` server and client
 artifacts expected by the hosting runtime, then embeds the project metadata
 required to save that bundle as a deployable version.
 
+## GitHub Pages deployment
+
+The site uses vinext's full static-export mode. Every push to `master` runs the
+content tests, builds all public routes, uploads `dist/client`, and deploys it
+through GitHub Pages. The custom apex domain is
+`https://samresearchproject.org`.
+
 ## Public-source boundary
 
 The public site links directly to controlling technical spines, live authority,

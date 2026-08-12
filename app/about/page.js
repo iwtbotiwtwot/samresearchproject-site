@@ -1,5 +1,7 @@
 import { ButtonLink, PageFrame, PageHero, Section } from "../../components/ResearchComponents.js";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "About", description: "Authorship, technical collaboration, mission, and public identity of the SAM Research Project.", alternates: { canonical: "/about" } };
 
 export default function AboutPage() {

@@ -1,6 +1,8 @@
 import { PageFrame, PageHero, RepositoryCard, Section } from "../../components/ResearchComponents.js";
 import { repositories } from "../../index.js";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Repositories", description: "The five public repositories of the SAM Research Project.", alternates: { canonical: "/repositories" } };
 
 export default function RepositoriesPage() {

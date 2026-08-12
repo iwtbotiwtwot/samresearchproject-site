@@ -3,6 +3,8 @@ import { BoundaryNote, ButtonLink, EquationBlock, NextRead, PageFrame, PageHero,
 const mp = "https://github.com/iwtbotiwtwot/mersenne-prime-search";
 const sam = "https://github.com/iwtbotiwtwot/SAM_Research_Project";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Mersenne Search", description: "SAM's owner-paused clean-sheet Mersenne candidate-screening program and public exact receipts.", alternates: { canonical: "/mersenne-search" } };
 
 export default function MersenneSearchPage() {

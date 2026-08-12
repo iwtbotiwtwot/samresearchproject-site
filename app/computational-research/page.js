@@ -1,5 +1,7 @@
 import { ButtonLink, PageFrame, PageHero, Section } from "../../components/ResearchComponents.js";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Computational Research", description: "This earlier public route now points into the complete SAM research record.", alternates: { canonical: "/research-record" }, robots: { index: false, follow: true } };
 
 export default function ComputationalResearchPage() {

@@ -2,6 +2,8 @@ import { BoundaryNote, ClassificationBadge, NextRead, PageFrame, PageHero, Secti
 
 const repo = "https://github.com/iwtbotiwtwot/SAM_Research_Project";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Research Record", description: "SAM's reconstructible public record of ideas, frozen contracts, executions, failures, corrections, successors, releases, and open constructions.", alternates: { canonical: "/research-record" } };
 
 const recordTypes = [

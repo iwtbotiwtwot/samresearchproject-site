@@ -2,6 +2,8 @@ import SearchExplorer from "../../components/SearchExplorer.js";
 import { PageFrame, PageHero, Section } from "../../components/ResearchComponents.js";
 import { searchEntries } from "../../index.js";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Search", description: "Search SAM pages, concepts, version IDs, campaign IDs, aliases, and exact terms.", alternates: { canonical: "/search" } };
 
 export default function SearchPage() {

@@ -2,6 +2,8 @@ import VolumePage from "../../components/VolumePage.js";
 
 const repo = "https://github.com/iwtbotiwtwot/SAM_Research_Project";
 
+export const dynamic = "force-static";
+
 export const metadata = { title: "Volume II: Matter", description: "Volume II of SAM: finite closure, binding, and tensor return.", alternates: { canonical: "/volume-ii" } };
 
 export default function VolumeIIPage() {
