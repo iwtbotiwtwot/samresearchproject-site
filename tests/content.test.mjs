@@ -10,7 +10,7 @@ test("site identity and route inventory match the current brief", () => {
   assert.equal(site.url, "https://samresearchproject.org");
   assert.equal(site.author, "Sean Brady");
   assert.equal(new Set(allRoutes).size, allRoutes.length);
-  for (const route of ["/theory", "/volumes", "/volume-i", "/volume-ii", "/volume-iii", "/slc", "/starbreaker", "/riemann-hypothesis", "/mersenne-search", "/research-record", "/repositories", "/downloads", "/stewardship", "/about"]) assert.ok(allRoutes.includes(route));
+  for (const route of ["/theory", "/volumes", "/volume-i", "/volume-ii", "/volume-iii", "/slc", "/starbreaker", "/galaxy-halos", "/riemann-hypothesis", "/mersenne-search", "/research-record", "/repositories", "/downloads", "/stewardship", "/about"]) assert.ok(allRoutes.includes(route));
 });
 
 test("search indexes exact version and campaign identifiers", () => {

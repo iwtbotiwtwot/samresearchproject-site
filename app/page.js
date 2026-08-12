@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section eyebrow="05 · Applications" title="Three distinct applications of the architecture." intro="Mersenne Search is one branch of SAM, not its whole identity." tone="dark" wide>
+      <Section eyebrow="05 · Applications" title="Four distinct applications of the architecture." intro="Mersenne Search is one branch of SAM, not its whole identity." tone="dark" wide>
         <div className="sam-application-grid">
           {applications.map((program) => (
             <a className={`sam-application-card sam-application-card--${program.accent}`} href={program.href} key={program.href}>
